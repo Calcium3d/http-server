@@ -7,7 +7,7 @@ ip = '127.0.0.1'
 
 s.connect((ip, port))
 
-s.send("GET lmao \n".encode('ascii'))
+s.send("lmao lmao \n".encode('ascii'))
 print(s.recv(4096).decode('ascii'))
 
 s.close()

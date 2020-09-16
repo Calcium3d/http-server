@@ -32,6 +32,9 @@ while True:
         if not found:
             client.send("Word not found".encode('ascii'))
 
+    else: 
+        client.send("Error {}: command not found".format(enter[0]).encode('ascii'))
+
     
 
     client.close()
